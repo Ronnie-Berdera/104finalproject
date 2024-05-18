@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7368d3661e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>BSIT Student</p>
+      <h1>Hi, I'm <span>Ronnie</span><br> Berdera from JMCFI.</h1>
+    </div>
+  </div>
+</div>
+
+<!----------About------------>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="pic2.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui possimus mollitia fuga at, illum eum laborum quaerat recusandae harum dolores obcaecati itaque repellendus suscipit dolor! Corporis sint mollitia voluptas?</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Love</span><br>I can love unconditionally.</li>
+            <li><span>Overthink</span><br>I can overthink 24/7.</li>
+            <li><span>Nonchalant</span><br>I am Nonchalant 24/7.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2010</span><br>I am young.</li>
+            <li><span>2015</span><br>I am still young.</li>
+            <li><span>2024 - Current</span><br>And now, I am Pogi.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2015-2020 JSH</span><br>Cabantian National High School</li>
+            <li><span>2021-2022 SHS</span><br>Communal National High School</li>
+            <li><span>2023-2024 - Current</span><br>Jose Maria College Foundation Incorporated</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----------Services------------>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-heart"></i>
+        <h2>Acts of Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur nulla aperiam quam dicta iste repellat fugit atque cupiditate dolorum aliquid voluptatem impedit iusto, ad mollitia velit explicabo delectus culpa dignissimos ab minus, fuga placeat magnam. Cupiditate, itaque odit reprehenderit assumenda voluptas magnam libero facilis architecto, dolore aliquid aliquam quas?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-heart"></i>
+        <h2>Acts of Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur nulla aperiam quam dicta iste repellat fugit atque cupiditate dolorum aliquid voluptatem impedit iusto, ad mollitia velit explicabo delectus culpa dignissimos ab minus, fuga placeat magnam. Cupiditate, itaque odit reprehenderit assumenda voluptas magnam libero facilis architecto, dolore aliquid aliquam quas?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-heart"></i>
+        <h2>Acts of Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur nulla aperiam quam dicta iste repellat fugit atque cupiditate dolorum aliquid voluptatem impedit iusto, ad mollitia velit explicabo delectus culpa dignissimos ab minus, fuga placeat magnam. Cupiditate, itaque odit reprehenderit assumenda voluptas magnam libero facilis architecto, dolore aliquid aliquam quas?</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------Portfolio---------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Portfolio</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="work1.png">
+        <div class="layer">
+          <h3>freeCodeCamp Certificate</h3>
+          <p>This is when I completed all of the activities in freeCodeCamp, and this is my Certificate proved that I completed all the tasks.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="work2.png">
+        <div class="layer">
+          <h3>BootStrap Positioning</h3>
+          <p>This is when our teacher discuss how BootStrap Positioning works, and then later on he gave us a task to try to make a website using BootStrap Positioning.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="work3.png">
+        <div class="layer">
+          <h3>BootStrap Tutorial</h3>
+          <p>This is when our teacher discuss how BootStrap works, and then later on he gave us a task to try to make a website using BootStrap.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="work4.png">
+        <div class="layer">
+          <h3>Esports</h3>
+          <p>This work right here is when our teacher discuss how to use HTML, and then later on he gave us a task to make a website and try and use HTML.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!--------------CONTACT--------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> ronnieberdera13@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 09465319814</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ronnie.berdera.5"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/dzhxhx_/"><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="White simple student cv resume.png" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Pogi Ako! <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  </script>
+
+  <script>
+
+      var sidemenu= document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+  </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzEvFCsqTmg_f6felQySbK83fyQsJ8TYJe-d8I7-WQku4ZUnecdTV91sw9vSs8jLTWu/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<!-------------BLOG SECTION----------->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<section id="blog">
+  <div class="blog-heading">
+    <span>Recent Esports Posts</span>
+    <h3>My Blog</h3>
+  </div>
+
+   <!----------BLOG CONTAINER----------->
+   <div class="blog-container">
+
+    <!--------BOX-1------------>
+    <div class="blog-box">
+
+      <!------IMG----->
+      <div class="blog-img">
+        <img src="blog1.png" alt="Blog">
+      </div>
+
+      <!---------TEXT--------->
+      <div class="blog-text">
+        <span>6 May 2024 / Esports News</span>
+        <a href="#" class="blog-title">What is Happening in Esports Industry?</a>
+        <p>AP.Bren once again concluded the regular season atop the standings after pulling off a thrilling 2-1 victory over ECHO in the final week of MPL Philippines Season 13 on Sunday at the Shooting Gallery Studios.</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+    <!--------BOX-2------------>
+    <div class="blog-box">
+
+      <!------IMG----->
+      <div class="blog-img">
+        <img src="blog2.png" alt="Blog">
+      </div>
+
+      <!---------TEXT--------->
+      <div class="blog-text">
+        <span>6 May 2024 / Esports News</span>
+        <a href="#" class="blog-title">What is Happening in Esports Industry?</a>
+        <p>MINANA Evos clinched their sixth win in their final regular-season match, completing a 2-1 reverse sweep against Smart Omega in the last week of MPL Philippines Season 13 on Sunday at the Shooting Gallery Studios.</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+    <!--------BOX-3------------>
+    <div class="blog-box">
+
+      <!------IMG----->
+      <div class="blog-img">
+        <img src="blog3.png" alt="Blog">
+      </div>
+
+      <!---------TEXT--------->
+      <div class="blog-text">
+        <span>6 May 2024 / Esports News</span>
+        <a href="#" class="blog-title">What is Happening in Esports Industry?</a>
+        <p>RSG Philippines moved closer to an upper bracket berth as they secured their seventh win in their last eight matches with a 2-0 sweep of TNC Pro Team in the penultimate week of the MPL Philippines Season 13 on Sunday at the Shooting Gallery Studios.</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+   </div>
+
+</section>
+
+<!-----------TESTIMONIAL PAGE--------->
+
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="title">Testimonial Page</h2>
+      <h3>What Our Clients Say.</h3>
+    </div>
+    <div class="testimonials-content">
+      <div class=" swiper testimonials-slider js-testimonials-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonials-item">
+            <div class="info">
+              <img src="client1.png" alt="">
+              <div class="text-box">
+                <h3 class="name">Jayquio Lagrama</h3>
+                <span class="position">BSIT Student</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia molestias facilis ullam. Animi odit vitae maxime beatae ducimus vel.</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-item">
+            <div class="info">
+              <img src="client2.png.jpg" alt="">
+              <div class="text-box">
+                <h3 class="name">Jhoboy Deondo</h3>
+                <span class="position">BSIT Student</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia molestias facilis ullam. Animi odit vitae maxime beatae ducimus vel.</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-item">
+            <div class="info">
+              <img src="client3.png.jpg" alt="">
+              <div class="text-box">
+                <h3 class="name">Kevin Albert Nisperos</h3>
+                <span class="position">BSIT Student</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia molestias facilis ullam. Animi odit vitae maxime beatae ducimus vel.</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-item">
+            <div class="info">
+              <img src="client1.png" alt="">
+              <div class="text-box">
+                <h3 class="name">Jemuel Yosores</h3>
+                <span class="position">BSIT Student</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia molestias facilis ullam. Animi odit vitae maxime beatae ducimus vel.</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-item">
+            <div class="info">
+              <img src="pic2.png" alt="">
+              <div class="text-box">
+                <h3 class="name">Ronnie Berdera</h3>
+                <span class="position">BSIT Student</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia molestias facilis ullam. Animi odit vitae maxime beatae ducimus vel.</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination js-testimonials-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.js-testimonials-slider', {
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.js-testimonials-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 2
+      }
+    }
+  });
+</script>
+
+<!--------------FAQ PAGE------------>
+
+<section>
+  <h2 class="title">FAQ Page</h2>
+
+  <div class="faq">
+    <div class="question">
+      <h3>What is HTML?</h3>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+
+    </div>
+    <div class="answer">
+      <p>
+        HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Is it easy to learn and master HTML and CSS?</h3>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+
+    </div>
+    <div class="answer">
+      <p>
+        While it's not the easiest subject to pick up on your own, it's very achievable to learn with the help of mentors from a coding bootcamp or college setting. The basic building blocks of web design are HTML (Hyper Text Markup Language) and CSS (Cascading Style Sheets).
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>What is Web Development?</h3>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+
+    </div>
+    <div class="answer">
+      <p>
+        Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.
+      </p>
+    </div>
+  </div>
+
+</section>
+<script src="./app.js"></script>
+
+
+<!-------------------404 ERROR PAGE------------------->
+
+<section id="error">
+  <div class="errorcontainer">
+      <h1>Oops! Page not found.</h1>
+      <p>The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+      <a href="#">Back To Home</a>    
+  </div>
+  <h1 class="fof">404</h1>
+</section>
+
+  </body>
+  </html>
+
